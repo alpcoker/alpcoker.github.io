@@ -1,10 +1,9 @@
 {
   "name": "alp-coker-website",
-  "source": "src/index.html",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "browserslist": ["> 0.5%", "last 2 versions", "not dead"],
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel src/index.html src/cv/index.html src/resume/index.html",
+    "build": "parcel build src/index.html src/cv/index.html src/resume/index.html"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.2.0",
