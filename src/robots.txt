@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alpcoker.com/sitemap.xml

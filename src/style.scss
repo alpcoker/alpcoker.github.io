@@ -1,0 +1,126 @@
+$white-text: #EDEDED;
+$bg-gradient-alpha: rgba(0, 0, 0, 0.6);
+$profile-photo-length: 25vmin;
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+}
+
+html {
+  background-image: linear-gradient(to top, $bg-gradient-alpha, $bg-gradient-alpha), url('images/bg.webp');
+  background-position: center;
+  background-size: cover;
+  font-family: Montserrat, serif;
+}
+
+#main {
+  color: $white-text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#profile-photo {
+  border-radius: 50%;
+  background: url(images/alp-coker.webp);
+  background-size: cover;
+  width: $profile-photo-length;
+  height: $profile-photo-length;
+  opacity: .7;
+  border: 1vmin solid #1b1b1b
+}
+
+#name {
+  margin-bottom: 5vmin;
+  font-size: 2em;
+}
+
+#title {
+  text-align: center;
+  max-width: 80vmin;
+  margin-bottom: 5vmin;
+  font-size: 1.4em;
+}
+
+#links {
+  list-style: none;
+  display: inline-flex;
+  padding: 0;
+}
+
+.link-item {
+  margin: 0 4vmin;
+}
+
+.fa {
+  font-family: FontAwesome, serif;
+  transform: translate(0, 0);
+}
+
+li > a > i{
+  font-size: 1.5em;
+}
+
+.fa-file::after {
+  content: 'CV';
+  font-size: .30em;
+  position: relative;
+  right: 1.9em;
+  bottom: 0.2em;
+  font-weight: bolder;
+  color: $white-text;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: $white-text;
+}
+
+#photo-credit {
+  font-size: 0.7em;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+body.is-loading #main {
+  opacity: 0;
+}
+
+body.is-loading #main > * {
+  opacity: 0;
+}
+
+#main > * {
+  transition: opacity 1s ease-in-out 0s;
+}
+
+#main > :nth-child(2) {
+  transition-delay: 0.25s;
+}
+
+#main > :nth-child(3) {
+  transition-delay: 0.5s;
+}
+
+#main > :nth-child(4) {
+  transition-delay: 0.75s;
+}
+
+#main > :nth-child(5) {
+  transition-delay: 1s;
+}
+
+#main > :nth-child(6) {
+  transition-delay: 1.25s;
+}
+
+#main > :nth-child(7) {
+  transition-delay: 1.5s;
+}
+
+#main > :nth-child(8) {
+  transition-delay: 1.75s;
+}
